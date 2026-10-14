@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protofolio Mio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <canvas id="particles"></canvas>
+        
+        <header>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#project">project</a>
+                <a href="#skill">skill</a>
+                <a href="#contact">contact</a>
+            </nav>
+            <h1>My Portofolio</h1>
+        </header>
+        
+        <main>
+            <section id = "home">
+                <div class="home-text">
+                    <h2>
+                        <span id="typing-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p>Mahasiswa Universitas PGRI Silampari Prodi Teknologi Informasi
+                        Semester 3, disini saya sedang belajar dan berlatih dalam bidang software 
+                        engineering</p>
+                        <div class="project-icon">
+                            <button type="button" onclick="document.getElementById('project').scrollIntoView({behavior: 'smooth'})">
+                                <i class="fa-solid fa-folder-open"></i>
+                                <span>My Project</span></button>
+
+                                <button id="music-button" type="button">
+                                    <i class="fa-solid fa-music"></i>
+                                    Musik Off
+                                </button>
+                                <audio id="bg-music" loop>
+                                    <source src="Download.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+            <div class="foto-slider">
+            <i class="fa-solid fa-circle-info icon-foto"></i>
+                <button class="slider-btn prev" aria-label="Foto sebelumnya">&#10094;</button>
+                <div class="foto-track">
+                    <img src="My Foto.jpeg" alt="FotoMio">
+                    <img src="Foto.jpg" alt="FotoMio">
+                </div>
+                <button class="slider-btn next" aria-label="Foto selanjutnya">&#10095;</button>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hii! Saya Tri Mio Maulana, mahasiswa Teknologi Informasi yang memiliki ketertarikan pada dunia teknologi, pemrograman, dan pengembangan aplikasi.
+            Saya senang mempelajari hal-hal baru, mengeksplorasi ide kreatif, serta mengembangkan keterampilan di bidang teknologi.
+            Saat ini, saya sedang mempelajari pemrograman menggunakan serta HTML, CSS, dan JavaScript. <br>
+            Saya percaya bahwa setiap proyek merupakan kesempatan untuk belajar, berkembang, dan menciptakan sesuatu yang bermanfaat.
+            Melalui portofolio ini, saya ingin menampilkan perjalanan belajar, proyek, dan kemampuan yang terus saya kembangkan di bidang teknologi informasi.
+            </p>
+        </section>
+
+        <section id = "project">
+            <h2>Project</h2>
+            <p>Berikut adalah beberapa project sederhana yang telah saya buat sebagai bagian dari pembelajaran dan pengembangan keterampilan saya di bidang teknologi informasi.</p>
+                <button onclick="location.href='Tugas/Tabel.html'">Project 1: Membuat Tabel Penilaian di HTML</button>
+                <button onclick="location.href='index.html'">Project 2: Membuat Portofolio Pribadi</button>
+                <button onclick="location.href='Baru/emoji.html'">Project 3: HTML – Emoji Integration</button>
+                <button onclick="location.href='Baru/video.html'">Project 4: HTML Video Integration</button>
+        </section>
+
+        <section id = "skill">
+            <h2>My Skill</h2>
+            <p>Berikut adalah beberapa keterampilan yang saya miliki</p>
+            <img src="html.png" alt="html" width="100px" class="skill-image">
+            <img src="css.png" alt="css" width="80px" class="skill-image">
+            <img src="javascript.png" alt="javascript" width="100px" class="skill-image">
+        </section>
+
+        <section id = "contact">
+            <h2>Contact Me</h2>
+            <p>Jika Anda ingin menghubungi saya, silakan gunakan informasi kontak berikut:</p>
+            <ul>
+                <li>Email: mio.maulana@gmail.com</li>
+                <li>Instagram: @mio_maulana</li>
+                &#169; Tri Mio Maulana
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
